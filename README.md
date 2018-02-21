@@ -1,2 +1,0 @@
-# SparkSchool
-lolz
