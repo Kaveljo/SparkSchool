@@ -16,7 +16,7 @@ li{
 	display:inline;
 }
 a{
-
+	text-decoration: none;
 }
 
 @font-face{
@@ -144,4 +144,206 @@ main{
 	width: 100%;
 	height: 728px;
 	background: url(images/poster.jpg) no-repeat;
+}
+
+.poster-item{
+	position: absolute;
+	top: 75px;
+	left: 20px;
+	width: 472px;
+	color: #ffffff;
+	padding-left: 30px; 
+}
+
+.poster-title{
+	font: 46px/51px RobotoRegular; /* Prvo je font a drugo je line-height N!!! mozemo samo sa fontom ali ne i sa font-size-om*/
+	font-weight: 400;
+}
+
+.poster-subtitle{
+	width: 50%;
+	margin-top: 40px 0;
+	font: 24px/35px RobotoMedium;
+}
+
+.poster-description{
+	font: 24px/35px RobotoRegular;
+}
+
+.poster-button{
+	width: 297px;
+	height: 45px;
+	color: #ffffff;
+	margin-top: 60px;
+	padding: 10px 15px;
+	font-size: 18px;
+	background-color: #ffba00;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.poster-button-title{
+	float: left;
+	font-weight: 500;
+}
+
+.poster-button-icon{
+	float: right;
+	height: 20px;
+	width: 20px;
+	background-image: url(images/icons-20.png);
+	background-repeat: no-repeat;
+	background-position: 0 -20;
+}
+
+.poster-navigation{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 18%;
+}
+
+.poster-navigation-next{
+	right: 0;
+}
+
+.poster-navigation-previous{
+	left: 0;
+}
+
+.poster-navigation-icon{
+	position: absolute;
+	top: 30%;
+	width: 100px;
+	height: 100px;
+	background-image: url(images/icons-100.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.poster-navigation-previous-icon{
+	left: 50%;
+	background-position: 0 0;
+}
+
+.poster-navigation-next-icon{
+	right: 50%;
+	background-position: 0 -100px;
+}
+
+.about{
+	color: #585858;
+}
+
+.about-title{
+	font-size: 24px;
+	padding: 40px 0;
+	border-bottom: 2px solid rgba(109, 109, 109, 0.43);
+}
+
+.about-items{
+	width:100%;
+	height: 471;
+	margin: 30px 0 50px 0;
+}
+
+.about-item{
+	float: left;
+	width: 300px;
+	padding-bottom: 30px;
+	margin-right: 50px;
+	text-align: left;
+	border-bottom: 17px solid #dae7ef;
+}
+
+.about-item:last-child{
+	float: right;
+	margin-right: 0;
+}
+
+.about-item-icon{
+	width: 80px;
+	height: 80px;
+	background-image: url(images/icons-80.png);
+	background-repeat: no-repeat;
+}
+
+.icon2{
+	background-position: 0 -80px;
+}
+
+.icon3{
+	background-position: 0 -160px;
+}
+
+.about-item-title{
+	margin: 20px 0 30px 0;
+	font-size: 30px;
+}
+
+.about-item-description{
+	font-size: 16px;
+}
+
+.about-item-link{
+	color: #ffba00;
+	font-size: 16px;
+}
+
+.subscribe{
+	position: relative;
+}
+
+.subscribe-parallax{
+	width: 100%;
+	height: 560px;
+	background-image: url(images/paralax.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 -1348px;
+}
+
+.subscribe-item{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 27px 75px;
+}
+
+.subscribe-title{
+	margin: 26px;
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 5000
+}
+
+.subscribe-area{
+	height: 145px;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+.subscribe-description{
+	float: left;
+	width: 55%;
+	height: 100%;
+	padding: 25px 0;
+	line-height: 25px;
+	border-right: 1px solid rgba(0,0,0,.13);
+}
+
+.subscribe-controls-row{
+	width: 353px;
+	height: 40px;
+	color: #bdbdbd;
+	margin-top: 22px;
+	background-color: rgba(200,204,206,.5);
+	border-radius: 30px;
+}
+
+.subscribe-controls-input{
+	width: 88%;
+	font-size: 12px;
+	padding: 13px 20px;
+	background-color: transparent;
 }
