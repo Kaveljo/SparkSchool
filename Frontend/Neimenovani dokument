@@ -1,0 +1,92 @@
+forked:https://jsfiddle.net/9dpb0zhq/
+
+
+code:
+
+	HTML:
+		<button onclick="myFunction(this, 'red')">Click me.</button>
+		<div id="products"></div>
+		<script>
+		    function myFunction(elmnt,clr) {
+			var data = "<p>Hello World!</p>";
+			window.open("data:text/html,"+ encodeURIComponent(data),"_blank");
+		    }	
+		</script>
+
+	JS:
+
+	      /*var divOne = document.createElement('div');
+		divOne.innerHTML='Test1';
+	  	document.body.appendChild(divOne);
+  
+		var divTwo = document.createElement('div');
+			divTwo.innerHTML='Test2';
+		  document.body.insertBefore(divTwo,divOne);
+
+		var test = document.createElement('div');
+		test.setAttribute("id","testBtn");
+		document.body.appendChild(test);
+
+		var lista = document.createElement('ul');
+
+			for(var i=0;i<10;i++){
+		  	var nam = document.createElement('li');
+		    nam.innerHTML = i;
+		    lista.appendChild(nam);
+		  }
+		  
+		document.getElementById('products').appendChild(lista);
+
+		var btn=document.createElement('button');
+		btn.innerHTML="Submit";
+		document.getElementById('testBtn').appendChild(btn);*/
+
+		//2.
+
+		var naslov = document.createElement('title');
+		naslov.innerHTML = "JavaScript page";
+		document.head.appendChild(naslov);
+
+
+		var b4 = document.createElement('div');
+		b4.setAttribute("id", "test");
+		b4.innerHTML = "Test";
+		document.body.appendChild(b4);
+
+		var cont = document.createElement('div');
+		cont.setAttribute("id", "container");
+		document.body.appendChild(cont);
+
+
+		var lista = document.createElement('ul');
+		lista.setAttribute("id", "list");
+
+		for (var i = 0; i < 12; i++) {
+		  var nam = document.createElement('li');
+		  var x = Math.floor(Math.random() * 10);
+		  nam.innerHTML = x;
+		  nam.setAttribute("class", "item");
+		  nam.setAttribute("index", i);
+		  lista.appendChild(nam);
+		}
+
+		document.getElementById('container').appendChild(lista);
+
+		//Look into
+		//https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment
+		//takodje properties i methods bi trebalo preci
+
+
+/* DOMACA 
+
+
+	Kreirajte dis s #container koji ce imati 5 article elemenata, svaki od kojih ce sadrzavati najveci naslov .title,
+	proizvoljnu sliku, neki sadrzaj unutar paragrafa. content, te proizvoljan link .read-more.
+
+
+
+
+
+
+
+*/
