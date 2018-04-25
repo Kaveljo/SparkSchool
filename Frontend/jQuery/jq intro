@@ -1,0 +1,41 @@
+forked:
+	https://jsfiddle.net/4jkgLq5e/
+
+code:
+
+
+
+	/*var JQ = jQuery.noConflict();
+JQ(document).ready(function(){
+	var txta = JQ("<textarea id='ta'></textarea>").text("Text.");
+	JQ(document.body).append(txta);
+  JQ(txta).on('contextmenu', function (e){
+  	e.preventDefault();
+  })
+});
+
+____________________________________
+
+
+var JQ = jQuery.noConflict();
+JQ(document).ready(function(){
+	var lista = JQ("<ul></ul>");
+  	for(var i = 0; i<10; i++){
+    	JQ(lista).append('<li>'+(i+1)+'</li>');
+    }
+   JQ(document.body).append(lista);
+   
+   JQ( "li" ).each(function(index) {
+      if((index+1)%2==0){
+      	JQ(this).addClass("my-item");
+      }
+      if((index+1)%3==0 && !JQ(this).hasClass("my-item")){
+      	JQ(this).addClass("new-item");
+      }
+     var elem=JQ(lista).eq("4").clone();
+     
+      
+	});
+});
+
+*/
